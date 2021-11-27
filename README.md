@@ -54,8 +54,9 @@ python train.py --data_path $DATA_PATH --model_name plnet_3f --frame_ids 0 -2 2
 
 #### Using 5 Frames
 
+Using the pretrained model from 3-frames setting gives better results.
 ```
-python train.py --data_path $DATA_PATH --model_name plnet_5f --frame_ids 0 -4 -2 2 4
+python train.py --data_path $DATA_PATH --model_name plnet_5f --load_weights_folder models/plnet_3f --frame_ids 0 -4 -2 2 4
 ```
 
 
